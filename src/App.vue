@@ -1,6 +1,10 @@
 <template>
   <div id="app">
+    <v-app>
+
     <MainVisualization />
+    </v-app>
+
   </div>
 </template>
 
