@@ -116,7 +116,6 @@ export default {
         .legend(legend)
         .title(title)
         .on('customValueMouseOver', (event,d) =>{ 
-          console.log(d);
           div.transition()
           .duration(50)
           .style("opacity", 1);
