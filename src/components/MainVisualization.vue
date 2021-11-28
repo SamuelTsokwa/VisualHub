@@ -78,7 +78,7 @@ export default {
           }
         } else {
           if (this.data2 != this.agMFNumber) {
-            this.subTitle1 = this.numberTitle
+            this.subTitle1 = this.numberTitle1
             this.data2 = this.agMFNumber
           }
         }
