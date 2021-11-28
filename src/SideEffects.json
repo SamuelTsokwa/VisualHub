@@ -1,9 +1,9 @@
 [
   {
     "Age group": "12 to 17",
-    "Total": 711,
-    "Male": 415,
-    "Female": 331,
+    "Total": "711",
+    "Male": "415",
+    "Female": "331",
     "Other": 4,
     "Unknown": 10,
     "Number of doses administered by age group": "4,164,954",
@@ -34,7 +34,7 @@
   {
     "Age group": "30 to 39",
     "Total": "3,927",
-    "Male": 857,
+    "Male": "857",
     "Female": "2,991",
     "Other": 10,
     "Unknown": 69,
@@ -50,7 +50,7 @@
   {
     "Age group": "40 to 49",
     "Total": "4,691",
-    "Male": 893,
+    "Male": "893",
     "Female": "3,699",
     "Other": 15,
     "Unknown": 84,
@@ -66,7 +66,7 @@
   {
     "Age group": "50 to 59",
     "Total": "4,665",
-    "Male": 992,
+    "Male": "992",
     "Female": "3,576",
     "Other": 9,
     "Unknown": 88,
@@ -82,7 +82,7 @@
   {
     "Age group": "60 to 69",
     "Total": "3,779",
-    "Male": 976,
+    "Male": "976",
     "Female": "2,698",
     "Other": 7,
     "Unknown": 98,
@@ -98,7 +98,7 @@
   {
     "Age group": "70 to 79",
     "Total": "2,239",
-    "Male": 644,
+    "Male": "644",
     "Female": "1,537",
     "Other": 2,
     "Unknown": 56,
@@ -114,8 +114,8 @@
   {
     "Age group": "80+",
     "Total": "1,326",
-    "Male": 321,
-    "Female": 975,
+    "Male": "321",
+    "Female": "975",
     "Other": 1,
     "Unknown": 29,
     "Number of doses administered by age group": "3,410,164",
@@ -130,8 +130,8 @@
   {
     "Age group": "Unknown",
     "Total": 766,
-    "Male": 147,
-    "Female": 362,
+    "Male": "147",
+    "Female": "362",
     "Other": 1,
     "Unknown": 256,
     "Number of doses administered by age group": "N/A",
@@ -144,3 +144,4 @@
     "Total reporting rate (males and females)1,2": "N/A"
   }
 ]
+

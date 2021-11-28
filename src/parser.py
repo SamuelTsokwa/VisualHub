@@ -4,8 +4,8 @@ raw = [
   {
     "Age group": "12 to 17",
     "Total": "711",
-    "Male": 415,
-    "Female": 331,
+    "Male": "415",
+    "Female": "331",
     "Other": 4,
     "Unknown": 10,
     "Number of doses administered by age group": "4,164,954",
@@ -36,7 +36,7 @@ raw = [
   {
     "Age group": "30 to 39",
     "Total": "3,927",
-    "Male": 857,
+    "Male": "857",
     "Female": "2,991",
     "Other": 10,
     "Unknown": 69,
@@ -52,7 +52,7 @@ raw = [
   {
     "Age group": "40 to 49",
     "Total": "4,691",
-    "Male": 893,
+    "Male": "893",
     "Female": "3,699",
     "Other": 15,
     "Unknown": 84,
@@ -68,7 +68,7 @@ raw = [
   {
     "Age group": "50 to 59",
     "Total": "4,665",
-    "Male": 992,
+    "Male": "992",
     "Female": "3,576",
     "Other": 9,
     "Unknown": 88,
@@ -84,7 +84,7 @@ raw = [
   {
     "Age group": "60 to 69",
     "Total": "3,779",
-    "Male": 976,
+    "Male": "976",
     "Female": "2,698",
     "Other": 7,
     "Unknown": 98,
@@ -100,7 +100,7 @@ raw = [
   {
     "Age group": "70 to 79",
     "Total": "2,239",
-    "Male": 644,
+    "Male": "644",
     "Female": "1,537",
     "Other": 2,
     "Unknown": 56,
@@ -116,8 +116,8 @@ raw = [
   {
     "Age group": "80+",
     "Total": "1,326",
-    "Male": 321,
-    "Female": 975,
+    "Male": "321",
+    "Female": "975",
     "Other": 1,
     "Unknown": 29,
     "Number of doses administered by age group": "3,410,164",
@@ -132,8 +132,8 @@ raw = [
   {
     "Age group": "Unknown",
     "Total": "766",
-    "Male": 147,
-    "Female": 362,
+    "Male": "147",
+    "Female": "362",
     "Other": 1,
     "Unknown": 256,
     "Number of doses administered by age group": "N/A",
@@ -159,8 +159,28 @@ raw = [
 
 
 ## For age group and rate
-agRate = {"key": "data", "values": []}
-for row in raw:
-    agRate["values"].append({"key": row["Age group"], "value":row["Reporting rate by age group"]})
+# agRate = {"key": "data", "values": []}
+# for row in raw:
+#     agRate["values"].append({"key": row["Age group"], "value":row["Reporting rate by age group"]})
 
-print(json.dumps(agRate))
+# print(json.dumps(agRate))
+
+# agMF=[{"key": "Male", "values": []},{"key": "Female", "values": []}]
+# for row in raw:
+#   temp = row["Male"].replace(',', '')
+#   total = int(temp)
+#   temp1 = row["Female"].replace(',', '')
+#   total1= int(temp1)
+#   agMF[0]["values"].append({"key":row["Age group"], "value":total})
+#   agMF[1]["values"].append({"key":row["Age group"], "value":total1})
+
+
+# print(json.dumps(agMF))
+
+agMF=[{"key": "Male", "values": []},{"key": "Female", "values": []}]
+for row in raw:
+  agMF[0]["values"].append({"key":row["Age group"], "value":row["Male reporting rate2"]})
+  agMF[1]["values"].append({"key":row["Age group"], "value":row["Female reporting rate2"]})
+
+
+print(json.dumps(agMF))
