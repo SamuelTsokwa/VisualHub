@@ -54,9 +54,9 @@ export default {
       rateTitle1: "Side Effect Rate by Age Group and sex",
       dropDownOptions: ['Number','Rate'],
       dropDownOptions2: ['Number','Rate'],
-      data1: {"key": "data", "values": [{"key": "12 to 17", "value": 711}, {"key": "18 to 29", "value": 3014}, {"key": "30 to 39", "value": 3927}, {"key": "40 to 49", "value": 4691}, {"key": "50 to 59", "value": 4665}, {"key": "60 to 69", "value": 3779}, {"key": "70 to 79", "value": 2239}, {"key": "80+", "value": 1326}, {"key": "Unknown", "value": 766}]},
-      agRate: {"key": "data", "values": [{"key": "12 to 17", "value": 17.07}, {"key": "18 to 29", "value": 31.21}, {"key": "30 to 39", "value": 44.5}, {"key": "40 to 49", "value": 55.51}, {"key": "50 to 59", "value": 50.97}, {"key": "60 to 69", "value": 42.52}, {"key": "70 to 79", "value": 36.64}, {"key": "80+", "value": 38.88}, {"key": "Unknown", "value": "N/A"}]},
-      agNumber: {"key": "data", "values": [{"key": "12 to 17", "value": 711}, {"key": "18 to 29", "value": 3014}, {"key": "30 to 39", "value": 3927}, {"key": "40 to 49", "value": 4691}, {"key": "50 to 59", "value": 4665}, {"key": "60 to 69", "value": 3779}, {"key": "70 to 79", "value": 2239}, {"key": "80+", "value": 1326}, {"key": "Unknown", "value": 766}]},
+      data1: {"key": "data1", "values": [{"key": "12 to 17", "value": 711}, {"key": "18 to 29", "value": 3014}, {"key": "30 to 39", "value": 3927}, {"key": "40 to 49", "value": 4691}, {"key": "50 to 59", "value": 4665}, {"key": "60 to 69", "value": 3779}, {"key": "70 to 79", "value": 2239}, {"key": "80+", "value": 1326}, {"key": "Unknown", "value": 766}]},
+      agRate: {"key": "data2", "values": [{"key": "12 to 17", "value": 17.07}, {"key": "18 to 29", "value": 31.21}, {"key": "30 to 39", "value": 44.5}, {"key": "40 to 49", "value": 55.51}, {"key": "50 to 59", "value": 50.97}, {"key": "60 to 69", "value": 42.52}, {"key": "70 to 79", "value": 36.64}, {"key": "80+", "value": 38.88}, {"key": "Unknown", "value": "N/A"}]},
+      agNumber: {"key": "data1", "values": [{"key": "12 to 17", "value": 711}, {"key": "18 to 29", "value": 3014}, {"key": "30 to 39", "value": 3927}, {"key": "40 to 49", "value": 4691}, {"key": "50 to 59", "value": 4665}, {"key": "60 to 69", "value": 3779}, {"key": "70 to 79", "value": 2239}, {"key": "80+", "value": 1326}, {"key": "Unknown", "value": 766}]},
       data2: [{"key": "Male", "values": [{"key": "12 to 17", "value": 415}, {"key": "18 to 29", "value": 1006}, {"key": "30 to 39", "value": 857}, {"key": "40 to 49", "value": 893}, {"key": "50 to 59", "value": 992}, {"key": "60 to 69", "value": 976}, {"key": "70 to 79", "value": 644}, {"key": "80+", "value": 321}, {"key": "Unknown", "value": 147}]}, {"key": "Female", "values": [{"key": "12 to 17", "value": 331}, {"key": "18 to 29", "value": 1949}, {"key": "30 to 39", "value": 2991}, {"key": "40 to 49", "value": 3699}, {"key": "50 to 59", "value": 3576}, {"key": "60 to 69", "value": 2698}, {"key": "70 to 79", "value": 1537}, {"key": "80+", "value": 975}, {"key": "Unknown", "value": 362}]}],
       agMFRate: [{"key": "Male", "values": [{"key": "12 to 17", "value": 19.66}, {"key": "18 to 29", "value": 20.7}, {"key": "30 to 39", "value": 19.68}, {"key": "40 to 49", "value": 21.67}, {"key": "50 to 59", "value": 22.13}, {"key": "60 to 69", "value": 22.63}, {"key": "70 to 79", "value": 22.22}, {"key": "80+", "value": 23.5}, {"key": "Unknown", "value": 0}]}, {"key": "Female", "values": [{"key": "12 to 17", "value": 16.15}, {"key": "18 to 29", "value": 40.86}, {"key": "30 to 39", "value": 67.09}, {"key": "40 to 49", "value": 85.59}, {"key": "50 to 59", "value": 76.68}, {"key": "60 to 69", "value": 59.04}, {"key": "70 to 79", "value": 47.89}, {"key": "80+", "value": 47.86}, {"key": "Unknown", "value": 0}]}],
       agMFNumber: [{"key": "Male", "values": [{"key": "12 to 17", "value": 415}, {"key": "18 to 29", "value": 1006}, {"key": "30 to 39", "value": 857}, {"key": "40 to 49", "value": 893}, {"key": "50 to 59", "value": 992}, {"key": "60 to 69", "value": 976}, {"key": "70 to 79", "value": 644}, {"key": "80+", "value": 321}, {"key": "Unknown", "value": 147}]}, {"key": "Female", "values": [{"key": "12 to 17", "value": 331}, {"key": "18 to 29", "value": 1949}, {"key": "30 to 39", "value": 2991}, {"key": "40 to 49", "value": 3699}, {"key": "50 to 59", "value": 3576}, {"key": "60 to 69", "value": 2698}, {"key": "70 to 79", "value": 1537}, {"key": "80+", "value": 975}, {"key": "Unknown", "value": 362}]}],
@@ -115,11 +115,11 @@ export default {
         .chart(chart)
         .legend(legend)
         .title(title)
-        .on('customValueMouseOver', function (event,d) {
+        .on('customValueMouseOver', (event,d) =>{ 
+          console.log(d);
           div.transition()
           .duration(50)
           .style("opacity", 1);
-
           div.html(this.data1 == this.agRate ? d.value + "%": d.value)
           .style("left", (event.pageX + 10) + "px")
           .style("top", (event.pageY - 15) + "px");
